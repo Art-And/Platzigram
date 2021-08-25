@@ -17,6 +17,8 @@ Including another URLconf
 #Django
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 from platzigram import views as local_views
 from posts import views as post_views
@@ -33,4 +35,4 @@ urlpatterns = [
 
     #post views
     path('posts/', post_views.list_posts)
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
