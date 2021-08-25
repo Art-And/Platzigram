@@ -1,3 +1,6 @@
 
 #hidden the secret key
 secret_settings.py
+
+#block de local media
+media/
