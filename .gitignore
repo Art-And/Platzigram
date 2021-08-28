@@ -2,5 +2,9 @@
 #hidden the secret key
 secret_settings.py
 
+#Cache
+**/__pycache__
+*.pyc
+
 #block de local media
 media/
